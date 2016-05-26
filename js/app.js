@@ -44,3 +44,10 @@ function playHadouken() {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+
+function playRyu() {
+  $('#ryu-music')[0].volume = 1;
+  $('#ryu-music')[0].load();
+  $('#ryu-music')[0].play();
+
+}
