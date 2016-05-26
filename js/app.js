@@ -22,14 +22,17 @@ $(document).ready(function () {
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
     })
-  $('body').keydown(function () {
-      $('.ryu-cool').show();
-      $('.ryu-still').hide();
-      $('.ryu-ready').hide();
+  $('html').keydown(function (e) {
+      if (e.which === 88) {
+        $('.ryu-cool').show();
+        $('.ryu-still').hide();
+        $('.ryu-ready').hide();
+      }
     })
     .keyup(function () {
       $('.ryu-cool').hide();
       $('.ryu-still').show();
+      $('.ryu-ready').hide();
     });
 
 
