@@ -24,6 +24,7 @@ $(document).ready(function () {
     })
   $('html').keydown(function (e) {
       if (e.which === 88) {
+        playRyu();
         $('.ryu-cool').show();
         $('.ryu-still').hide();
         $('.ryu-ready').hide();
