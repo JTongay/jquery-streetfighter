@@ -16,14 +16,24 @@ $(document).ready(function () {
         function () {
           $(this).hide();
           $(this).css('left', '520px');
-        }
-      );
-
+        });
     })
     .mouseup(function () {
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
+    })
+  $('body').keydown(function () {
+      $('.ryu-cool').show();
+      $('.ryu-still').hide();
+      $('.ryu-ready').hide();
+    })
+    .keyup(function () {
+      $('.ryu-cool').hide();
+      $('.ryu-still').show();
     });
+
+
+
 });
 
 function playHadouken() {
