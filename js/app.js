@@ -22,7 +22,7 @@ $(document).ready(function () {
       $('.ryu-throwing').hide();
       $('.ryu-ready').show();
     })
-  $('html').keydown(function (e) {
+  $('html').keypress(function (e) {
       if (e.which === 88) {
         playRyu();
         $('.ryu-cool').show();
