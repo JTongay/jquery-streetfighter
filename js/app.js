@@ -36,6 +36,7 @@
         $('.ryu-cool').hide();
         $('.ryu-still').show();
         $('.ryu-ready').hide();
+
       });
 
 
