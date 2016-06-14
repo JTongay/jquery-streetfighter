@@ -50,7 +50,7 @@
   }
 
   function playRyu() {
-    $('#ryu-music')[0].volume = 0.8;
+    $('#ryu-music')[0].volume = 1;
     $('#ryu-music')[0].load();
     $('#ryu-music')[0].play();
 
